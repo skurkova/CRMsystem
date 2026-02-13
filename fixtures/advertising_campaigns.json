@@ -1,0 +1,79 @@
+[
+  {
+    "model": "advertising_campaigns.advertisingcampaign",
+    "pk": 1,
+    "fields": {
+      "title": "Летняя распродажа 2026",
+      "service": 1,
+      "promotion_channel": "Google Ads",
+      "budget": "100000.00",
+      "created_at": "2026-01-10T09:00:00Z"
+    }
+  },
+  {
+    "model": "advertising_campaigns.advertisingcampaign",
+    "pk": 2,
+    "fields": {
+      "title": "Продвижение в Инстаграм",
+      "service": 2,
+      "promotion_channel": "Instagram",
+      "budget": "50000.00",
+      "created_at": "2026-01-12T10:30:00Z"
+    }
+  },
+  {
+    "model": "advertising_campaigns.advertisingcampaign",
+    "pk": 3,
+    "fields": {
+      "title": "Email-рассылка о скидках",
+      "service": 3,
+      "promotion_channel": "Email Marketing",
+      "budget": "20000.00",
+      "created_at": "2026-01-15T14:00:00Z"
+    }
+  },
+  {
+    "model": "advertising_campaigns.advertisingcampaign",
+    "pk": 4,
+    "fields": {
+      "title": "Таргетированная реклама в ВК",
+      "service": 4,
+      "promotion_channel": "VKontakte",
+      "budget": "35000.00",
+      "created_at": "2026-01-18T11:15:00Z"
+    }
+  },
+  {
+    "model": "advertising_campaigns.advertisingcampaign",
+    "pk": 5,
+    "fields": {
+      "title": "Контекстная реклама Яндекс",
+      "service": 5,
+      "promotion_channel": "Yandex Direct",
+      "budget": "80000.00",
+      "created_at": "2026-01-20T16:45:00Z"
+    }
+  },
+  {
+    "model": "advertising_campaigns.advertisingcampaign",
+    "pk": 6,
+    "fields": {
+      "title": "Реклама в Telegram",
+      "service": 1,
+      "promotion_channel": "Telegram",
+      "budget": "45000.00",
+      "created_at": "2026-01-22T13:20:00Z"
+    }
+  },
+  {
+    "model": "advertising_campaigns.advertisingcampaign",
+    "pk": 7,
+    "fields": {
+      "title": "YouTube-реклама",
+      "service": 2,
+      "promotion_channel": "YouTube",
+      "budget": "120000.00",
+      "created_at": "2026-01-25T09:30:00Z"
+    }
+  }
+]

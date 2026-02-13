@@ -1,0 +1,80 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$gVvZBKUc98i5oWN59LfNPK$8HJbmAe0znCRZ6tt0D7cNoGiNo8rBVX5uBD9vaOFVfQ=",
+    "last_login": "2026-02-11T12:30:51.583Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@crm.local",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-02-04T14:48:19.088Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$hqR6wi7axt9h8RR9S5ob31$+PwB29qmut/VhP0+RmUkbU/1Yw3TTapRK3Z4QaH+cyE=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "operator",
+    "first_name": "",
+    "last_name": "",
+    "email": "operator@crm.local",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-02-11T10:05:00Z",
+    "groups": [
+      1
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$WwP8C3zwT8W5yIcewzFO8W$lsyPH9c4C2sDQIKB4RIUkJNtNDO72H8v16LHM639Da4=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "marketer",
+    "first_name": "",
+    "last_name": "",
+    "email": "marketer@crm.local",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-02-11T10:10:00Z",
+    "groups": [
+      2
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$APi2JbHMqIzHqOb605WMMa$r5T9MUDHMrrlhOPo09EkyOjm2qPaNlIIBCNJVcqwacY=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "manager",
+    "first_name": "",
+    "last_name": "",
+    "email": "manager@crm.local",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-02-11T10:15:00Z",
+    "groups": [
+      3
+    ],
+    "user_permissions": []
+  }
+}
+]

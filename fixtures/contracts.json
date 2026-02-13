@@ -1,0 +1,86 @@
+[
+  {
+    "model": "contracts.contract",
+    "pk": 1,
+    "fields": {
+      "title": "Контракт #001 - Консалтинг",
+      "service": 1,
+      "document": "",
+      "date_start": "2026-01-15",
+      "date_end": "2026-07-15",
+      "amount": "50000.00"
+    }
+  },
+  {
+    "model": "contracts.contract",
+    "pk": 2,
+    "fields": {
+      "title": "Контракт #002 - Разработка сайта",
+      "service": 2,
+      "document": "",
+      "date_start": "2026-02-01",
+      "date_end": "2026-05-01",
+      "amount": "120000.00"
+    }
+  },
+  {
+    "model": "contracts.contract",
+    "pk": 3,
+    "fields": {
+      "title": "Контракт #003 - SEO-оптимизация",
+      "service": 3,
+      "document": "",
+      "date_start": "2026-01-10",
+      "date_end": "2026-04-10",
+      "amount": "30000.00"
+    }
+  },
+  {
+    "model": "contracts.contract",
+    "pk": 4,
+    "fields": {
+      "title": "Контракт #004 - SMM-продвижение",
+      "service": 4,
+      "document": "",
+      "date_start": "2026-02-15",
+      "date_end": "2026-08-15",
+      "amount": "40000.00"
+    }
+  },
+  {
+    "model": "contracts.contract",
+    "pk": 5,
+    "fields": {
+      "title": "Контракт #005 - Анализ конкурентов",
+      "service": 5,
+      "document": "",
+      "date_start": "2026-03-01",
+      "date_end": "2026-04-01",
+      "amount": "25000.00"
+    }
+  },
+  {
+    "model": "contracts.contract",
+    "pk": 6,
+    "fields": {
+      "title": "Контракт #006 - Комплексный маркетинг",
+      "service": 1,
+      "document": "",
+      "date_start": "2026-03-15",
+      "date_end": "2026-09-15",
+      "amount": "150000.00"
+    }
+  },
+  {
+    "model": "contracts.contract",
+    "pk": 7,
+    "fields": {
+      "title": "Контракт #007 - Разработка лендинга",
+      "service": 2,
+      "document": "",
+      "date_start": "2026-04-01",
+      "date_end": "2026-06-01",
+      "amount": "80000.00"
+    }
+  }
+]

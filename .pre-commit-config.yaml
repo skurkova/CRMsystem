@@ -1,0 +1,24 @@
+repos:
+  - repo: https://github.com/pycqa/pylint
+    rev: v3.3.9  # актуальная версия
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types: [python]
+        args:
+          - "--load-plugins=pylint_django"
+          - "--django-settings-module=CRMsystem.settings"
+          - "--max-line-length=120"
+          - "--disable=too-few-public-methods,no-member,missing-docstring"
+        exclude: |
+          (?x)^(
+            venv/.*|
+            .git/.*|
+            migrations/.*|
+            __pycache__/.*|
+            static/.*|
+            media/.*|
+            .*\.pyc$
+          )$

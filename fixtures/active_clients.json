@@ -1,0 +1,39 @@
+[
+  {
+    "model": "active_clients.activeclient",
+    "pk": 1,
+    "fields": {
+      "potential_client": 1,
+      "contract": 1,
+      "activated_at": "2026-01-20T10:00:00Z"
+    }
+  },
+  {
+    "model": "active_clients.activeclient",
+    "pk": 2,
+    "fields": {
+      "potential_client": 2,
+      "contract": 2,
+      "activated_at": "2026-01-22T11:30:00Z"
+    }
+  },
+  {
+    "model": "active_clients.activeclient",
+    "pk": 3,
+    "fields": {
+      "potential_client": 3,
+      "contract": 3,
+      "activated_at": "2026-01-25T14:15:00Z"
+    }
+  },
+  {
+    "model": "active_clients.activeclient",
+    "pk": 4,
+    "fields": {
+      "potential_client": 4,
+      "contract": 4,
+      "activated_at": "2026-01-28T09:45:00Z"
+    }
+  }
+]
+
