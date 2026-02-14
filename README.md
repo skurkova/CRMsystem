@@ -16,6 +16,7 @@
 - **Инструменты разработки**
     - Pylint + pylint-django (статический анализ кода)
     - pre-commit (автоматическая проверка кода перед коммитом)
+    - Docker + Docker Compose (контейнеризация)
 
 ## 📋 Основной функционал приложения:
 - Авторизация пользователя; 
@@ -42,65 +43,24 @@
     git clone git@github.com:skurkova/CRMsystem.git
     cd CRMsystеm
 
-2. Создать и активировать виртуальное окружение:
-    python3 -m venv venv
-    source venv/bin/activate
-
-3. Установить зависимости:
-    pip install -r requirements.txt
-
-4. Настроить переменные окружения:
+2. Настроить переменные окружения:
     - переименовать файл .env.template → .env:
         cp .env.template .env
-    - отредактировать файл.env:
+    - отредактировать файл.env, добавив необходимые значения:
         nano .env
-        DB_NAME=<имя базы данных>
-        DB_USER=<имя пользователя>
-        DB_PASSWORD=<пароль>
-
-5. Настроить базу данных PostgreSQL:
-    - Установить PostgreSQL (если не установлен):
-        brew install postgresql
-        brew services start postgresql
     
-    - Создать пользователя и базу данных:
-        psql postgres 
-        CREATE USER <имя пользователя> WITH PASSWORD '<пароль>' CREATEDB;
-        CREATE DATABASE <имя базы данных> OWNER <имя пользователя>;
-   
-    - Настроить CRMsystеm/settings.py:
-        from dotenv import load_dotenv
-        import os
-        load_dotenv()
-        DATABASES = {
-            'default': {
-                'ENGINE': 'django.db.backends.postgresql',
-                'NAME': os.getenv('DB_NAME'),
-                'USER': os.getenv('DB_USER'),
-                'PASSWORD': os.getenv('DB_PASSWORD'),
-                'HOST': 'localhost',
-                'PORT': '5433',
-            }
-        }
+3. Запустить приложение с помощью Docker Compose:
+    docker-compose up -d --build
 
-6. Применить миграции:
-    python manage.py migrate
+4. Загрузить фикстуры (при необходимости) в правильном порядке:
+    docker-compose exec django python manage.py loaddata fixtures/services.json
+    docker-compose exec django python manage.py loaddata fixtures/advertising_campaigns.json
+    docker-compose exec django python manage.py loaddata fixtures/potential_clients.json
+    docker-compose exec django python manage.py loaddata fixtures/contracts.json
+    docker-compose exec django python manage.py loaddata fixtures/active_clients.json
+    docker-compose exec django python manage.py loaddata fixtures/users.json
 
-7. Запустить сервер:
-    python manage.py runserver
-
-8. Создать роли пользователей:
-    python manage.py create_user_groups_permissions
-
-9. Загрузить фикстуры в правильном порядке:
-    python manage.py loaddata fixtures/services.json
-    python manage.py loaddata fixtures/advertising_campaigns.json
-    python manage.py loaddata fixtures/potential_clients.json
-    python manage.py loaddata fixtures/contracts.json
-    python manage.py loaddata fixtures/active_clients.json
-    python manage.py loaddata fixtures/users.json
-
-10. Открыть в браузере:
+5. Открыть в браузере:
     - Основной интерфейс: http://127.0.0.1:8000/
     - Админка Django: http://127.0.0.1:8000/admin/
 ````
@@ -114,4 +74,4 @@ pylint --load-plugins pylint_django --django-settings-module=CRMsystеm.settings
 ````
 pre-commit install
 ````
-После установки **pre-commit** проверка запускается автоматически при каждом коммите
+*После установки **pre-commit** проверка запускается автоматически при каждом коммите

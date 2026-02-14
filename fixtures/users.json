@@ -1,24 +1,6 @@
 [
 {
   "model": "auth.user",
-  "pk": 1,
-  "fields": {
-    "password": "pbkdf2_sha256$600000$gVvZBKUc98i5oWN59LfNPK$8HJbmAe0znCRZ6tt0D7cNoGiNo8rBVX5uBD9vaOFVfQ=",
-    "last_login": "2026-02-11T12:30:51.583Z",
-    "is_superuser": true,
-    "username": "admin",
-    "first_name": "",
-    "last_name": "",
-    "email": "admin@crm.local",
-    "is_staff": true,
-    "is_active": true,
-    "date_joined": "2026-02-04T14:48:19.088Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "auth.user",
   "pk": 2,
   "fields": {
     "password": "pbkdf2_sha256$600000$hqR6wi7axt9h8RR9S5ob31$+PwB29qmut/VhP0+RmUkbU/1Yw3TTapRK3Z4QaH+cyE=",
