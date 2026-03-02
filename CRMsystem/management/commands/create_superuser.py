@@ -13,9 +13,9 @@ class Command(BaseCommand):
                     password='admin'
             )
             self.stdout.write(
-                    self.style.SUCCESS(f'✅ Суперпользователь успешно создан!')
+                    self.style.SUCCESS(f'Суперпользователь успешно создан!')
                 )
         else:
             self.stdout.write(
-                self.style.WARNING(f'⚠️ Суперпользователь уже существует')
+                self.style.WARNING(f'Суперпользователь уже существует')
             )

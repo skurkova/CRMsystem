@@ -5,7 +5,7 @@ from services.models import Service
 
 def contract_document_directory_path(instance: 'Contract', filename: str):
     """Определяем путь к каталогу документов контракта"""
-    return f'contracts/contract_{instance.pk}/{filename}'
+    return f'contracts/contract_{instance.title}/{filename}'
 
 
 class Contract(models.Model):
