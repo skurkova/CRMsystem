@@ -20,8 +20,6 @@ from django.contrib import admin
 from django.contrib.auth import views
 from django.urls import path, include
 
-from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
-
 from CRMsystem.views import IndexView
 
 urlpatterns = [
@@ -37,11 +35,7 @@ urlpatterns = [
     path('ads/', include('advertising_campaigns.urls')),
     path('leads/', include('potential_clients.urls')),
     path('contracts/', include('contracts.urls')),
-    path('customers/', include('active_clients.urls')),
-
-    # Документация API (OpenAPI)
-    path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
-    path('api/schema/swagger/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger'),
+    path('customers/', include('active_clients.urls'))
 ]
 
 if settings.DEBUG:

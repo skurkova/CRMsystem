@@ -48,8 +48,6 @@ INSTALLED_APPS = [
     'potential_clients',                 # Приложение для работы с потенциальными клиентами
     'contracts',                         # Приложение для работы с контрактами
     'active_clients',                    # Приложение для работы с активными клиентами
-
-    'drf_spectacular',                   # Генератор документации OpenAPI
 ]
 
 MIDDLEWARE = [
@@ -147,15 +145,6 @@ LOGOUT_REDIRECT_URL = 'login/'  # Куда перенаправить после
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
-# Настройки для drf-spectacular
-SPECTACULAR_SETTINGS = {
-    'TITLE': 'CRM system API',
-    'DESCRIPTION': 'API веб-приложения для управления клиентами',
-    'VERSION': '1.0.0',
-    'SERVE_INCLUDE_SCHEMA': False,
-}
 
 LOGLEVEL = 'INFO'
 
