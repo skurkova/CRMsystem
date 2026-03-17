@@ -13,6 +13,11 @@ class PotentialClientsListView(LoginRequiredMixin, PermissionRequiredMixin, List
     template_name = 'potential_clients/leads-list.html'
     context_object_name = 'leads'
 
+    def get_queryset(self):
+        # Показываем только тех, кто не является активным клиентом
+        return PotentialClient.objects.filter(
+            activeclient__isnull=True
+        )
 
 class PotentialClientCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
     """Создание потенциального клиента"""
